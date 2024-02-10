@@ -15,7 +15,7 @@ public class RandomRetros extends JPanel
     }
 
     public int randomIndex(String [] ar){
-        return (int) Math.random() * ar.length - 1;
+        return (int) (Math.random() * ar.length);
     }
 
 
