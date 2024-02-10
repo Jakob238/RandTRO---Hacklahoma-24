@@ -9,7 +9,4 @@ public class RandomRetros extends JPanel
     JPanel panel = new RandomRetros();
     JFrame frame = new JFrame(WINDOW_TITLE);
 
-    
-
-
 }
