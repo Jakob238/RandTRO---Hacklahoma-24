@@ -23,14 +23,16 @@ public class RandomRetros extends JPanel
         frame.setVisible(true);
 
 
-
+       
 
 
 
 
     }
 
-    
+    public int randomIndex(String [] ar){
+        return (int) (Math.random() * ar.length);
+    }
 
 
 }
