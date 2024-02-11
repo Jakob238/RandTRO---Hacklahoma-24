@@ -34,14 +34,15 @@ public class RandomRetros extends JPanel
         });
     }
 
-
+ 
     public int randomIndex(String [] ar){
         return (int) (Math.random() * ar.length);
     }
 
-    public String ()
+    public String generateRandomPicture()
     {
         //array of pictures
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0"};
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0", "https://shorturl.at/oxQ23"};
+        return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
