@@ -7,7 +7,7 @@ public class RandomRetros extends JPanel
 {
     // Instances Variables
     private static final String WINDOW_TITLE = "Random Retro Project!";
-    private String stringURL = "https://shorturl.at/oxQ23";
+    private String stringURL = "https://shorturl.at/oxQ23";     // Default 
 
     public void setStringURL(String stringURL) {
         this.stringURL = stringURL;
@@ -58,14 +58,18 @@ public class RandomRetros extends JPanel
 
     }
  
+    // Returns an int value between 0 and the length of the array.
+    // Multiplies the length of the paramaterized array with the Math.random() to receive the index value
     public int randomIndex(String [] ar){
         return (int) (Math.random() * ar.length);
     }
 
+
+    // Returns a random link that will be used to display the image on the JPanel
+    // Using the randomIndex method with the parameter String[] ar for an array.
     public String generateRandomPicture()
-    {
-        //array of pictures
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0", "https://shorturl.at/oxQ23","https://shorturl.at/sMNQ7", "https://shorturl.at/FIU49", "https://shorturl.at/cknrU"};
+    {  
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://shorturl.at/inDHN", "https://shorturl.at/vQZ15"};
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
