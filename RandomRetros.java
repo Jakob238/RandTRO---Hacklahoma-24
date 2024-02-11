@@ -42,7 +42,7 @@ public class RandomRetros extends JPanel
     public String generateRandomPicture()
     {
         //array of pictures
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0", "https://shorturl.at/oxQ23"};
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0", "https://shorturl.at/oxQ23","https://shorturl.at/sMNQ7", "https://shorturl.at/FIU49", "https://shorturl.at/cknrU"};
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
