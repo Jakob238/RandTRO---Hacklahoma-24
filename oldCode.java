@@ -1,30 +1,21 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.geom.*;
 import java.awt.event.*;
-import java.net.URL;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 
 public class RandomRetros extends JPanel
 {
     // Instances Variables
     private static final String WINDOW_TITLE = "Random Retro Project!";
-    private String stringURL = "https://shorturl.at/oxQ23";
 
-    public void setStringURL(String stringURL) {
-        this.stringURL = stringURL;
-    }
-    public String getStringURL() {
-        return this.stringURL;
-    }
     public static void main(String[] args) {
-        RandomRetros panel = new RandomRetros();
+        JPanel panel = new JPanel();
         JFrame frame = new JFrame(WINDOW_TITLE);
-        JLabel label = new JLabel("");
+        JLabel label = new JLabel("Test Label");
 
-        int width = 1920;
-        int height = 1080;
-        
-
-        frame.setSize(width, height);
+        frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel); 
         frame.setVisible(true);
@@ -38,25 +29,11 @@ public class RandomRetros extends JPanel
                     // Call a method to handle space bar press
                     System.out.println("Space bar pressed!");
                     // Call a method to get a random image here
-                    panel.setStringURL(panel.generateRandomPicture());
-                    panel.repaint();
                 }
             }
         });
     }
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
-        try {
-            Image image = new ImageIcon(new URL(stringURL)).getImage();
-            g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
  
     public int randomIndex(String [] ar){
         return (int) (Math.random() * ar.length);
@@ -69,3 +46,4 @@ public class RandomRetros extends JPanel
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
+//yo
