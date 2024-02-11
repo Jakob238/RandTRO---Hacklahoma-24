@@ -73,6 +73,7 @@ public class RandomRetros extends JPanel
         //int x = (int) (Math.random() * ar.length);
         //System.out.println(x);
         //return x;
+        //test
         return (int) (Math.random() * ar.length);
     }
 
