@@ -26,7 +26,7 @@ public class RandomRetros extends JPanel
         RandomRetros panel = new RandomRetros();    // RandomRetro Object
 
         JFrame frame = new JFrame(WINDOW_TITLE);
-        JLabel label = new JLabel("");
+        // JLabel label = new JLabel("");
 
         // Properties for the Image Framework
         frame.setSize(width, height);
