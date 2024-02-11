@@ -39,5 +39,9 @@ public class RandomRetros extends JPanel
         return (int) (Math.random() * ar.length);
     }
 
-
+    public String ()
+    {
+        //array of pictures
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/gkPRY", "https://shorturl.at/puIW0"};
+    }
 }
