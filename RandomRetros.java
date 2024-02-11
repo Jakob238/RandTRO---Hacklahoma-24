@@ -6,29 +6,36 @@ import java.net.URL;
 public class RandomRetros extends JPanel
 {
     // Instances Variables
-    private static final String WINDOW_TITLE = "Random Retro Project!";
-    private String stringURL = "https://shorturl.at/oxQ23";     // Default 
+    private static final String WINDOW_TITLE = "RandTRO Project";
+    private String stringURL = "https://is.gd/DlUGc3";     // Home Image
 
+
+    // setters and getters
     public void setStringURL(String stringURL) {
         this.stringURL = stringURL;
     }
     public String getStringURL() {
         return this.stringURL;
     }
+
+    // Main Method Output
     public static void main(String[] args) {
-        RandomRetros panel = new RandomRetros();
+        int width = 1920;       // 16:9 Default Width
+        int height = 1080;      // 16:9 Default Height
+
+        RandomRetros panel = new RandomRetros();    // RandomRetro Object
+
         JFrame frame = new JFrame(WINDOW_TITLE);
         JLabel label = new JLabel("");
 
-        int width = 1920;
-        int height = 1080;
-        
-
+        // Properties for the Image Framework
         frame.setSize(width, height);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel); 
         frame.setVisible(true);
 
+        // keyPressed Method 
+        // Changes the image from the panel when the SPACE Keybind is pressed.
         panel.setFocusable(true);
         panel.requestFocus();
         panel.addKeyListener(new KeyAdapter() {
@@ -45,6 +52,8 @@ public class RandomRetros extends JPanel
         });
     }
 
+    // paintComponent Method
+    // Creates various graphics changes by receiving a new Image URL and drawing the image onto the Panel
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -69,7 +78,7 @@ public class RandomRetros extends JPanel
     // Using the randomIndex method with the parameter String[] ar for an array.
     public String generateRandomPicture()
     {  
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://shorturl.at/eimzV", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://shorturl.at/inDHN", "https://shorturl.at/vQZ15"};
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://is.gd/jjtGRv", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://is.gd/6KXSKM", "https://shorturl.at/vQZ15"};
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
