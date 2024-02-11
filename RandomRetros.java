@@ -43,7 +43,7 @@ public class RandomRetros extends JPanel
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                     // Call a method to handle space bar press
-                    System.out.println("Space bar pressed!");
+                    //System.out.println("Space bar pressed!");
                     // Call a method to get a random image here
                     panel.setStringURL(panel.generateRandomPicture());
                     panel.repaint();
@@ -70,6 +70,9 @@ public class RandomRetros extends JPanel
     // Returns an int value between 0 and the length of the array.
     // Multiplies the length of the paramaterized array with the Math.random() to receive the index value
     public int randomIndex(String [] ar){
+        //int x = (int) (Math.random() * ar.length);
+        //System.out.println(x);
+        //return x;
         return (int) (Math.random() * ar.length);
     }
 
@@ -78,7 +81,7 @@ public class RandomRetros extends JPanel
     // Using the randomIndex method with the parameter String[] ar for an array.
     public String generateRandomPicture()
     {  
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://is.gd/jjtGRv", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://is.gd/6KXSKM","https://shorturl.at/wGOVZ","https://shorturl.at/gnxyE","https://shorturl.at/cgCQ5"};
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://is.gd/jjtGRv", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://is.gd/6KXSKM","https://shorturl.at/wGOVZ","https://shorturl.at/cgCQ5"};
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
