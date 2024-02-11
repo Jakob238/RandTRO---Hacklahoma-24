@@ -81,7 +81,7 @@ public class RandomRetros extends JPanel
     // Using the randomIndex method with the parameter String[] ar for an array.
     public String generateRandomPicture()
     {  
-        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://is.gd/jjtGRv", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://is.gd/6KXSKM","https://shorturl.at/wGOVZ","https://shorturl.at/cgCQ5"};
+        String[] arrOfPictures = {"https://shorturl.at/hlovE", "https://is.gd/jjtGRv", "https://shorturl.at/cvPR3", "https://shorturl.at/egyzB", "https://is.gd/6KXSKM","https://shorturl.at/wGOVZ","https://shorturl.at/cgCQ5","https://shorturl.at/hzAHZ","https://shorturl.at/hkmpv", "https://shorturl.at/avNP8"};
         return arrOfPictures[randomIndex(arrOfPictures)];
     }
 }
