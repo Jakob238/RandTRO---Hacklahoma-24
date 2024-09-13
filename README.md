@@ -1,6 +1,6 @@
-# Retro Future Space Project (RandTRO)
+# RandTRO
 
-The Retro Future Space Project (RandTRO) is a Java project created for the Hacklahoma Hackathon 2024. 
+The RandTRO is a Java project created for the Hacklahoma Hackathon 2024. 
 The project outputs provided Retro-futuristic images at random when pressing the SPACE Key.
 
 Our project uses 3 Java importations, each using extensions for Java JPanel, JFrame, and URL APIs.
